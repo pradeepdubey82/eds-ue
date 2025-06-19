@@ -5,7 +5,7 @@
       "id": "default",
       "components": [
         {
-          "title": "Text",
+          "title": "Text 123",
           "id": "text",
           "plugins": {
             "xwalk": {
