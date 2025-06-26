@@ -3,7 +3,7 @@ export default function decorate(block) {
 const elements = [...block.children];
   console.log("Elements ::: "+elements);
 
-let collection = document.getElementsByTagName("p");
+let collection = [...block.children];
 
         for (let i of collection) {
             console.log(collection[i].getAttribute('data-aue-prop'));
