@@ -3,6 +3,6 @@ const [quoteWrapper] = block.children;
 
   const blockquote = document.createElement('blockquote');
   blockquote.classList.add('title');
-  blockquote.textContent = quoteWrapper.textContent.trim();
-  quoteWrapper.replaceChildren(blockquote);
+  blockquote.textContent = quoteWrapper[0].textContent.trim();
+  quoteWrapper.appendChild(blockquote);
 }
