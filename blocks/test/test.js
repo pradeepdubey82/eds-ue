@@ -4,7 +4,7 @@ export default function decorate(block) {
   const t2 = cells[1].classList.add('description');
 
   block.textContent = '';
-  const initialValue = "Pradeep Test";
+  const initialValue = 5;
   const counter = document.createElement('counter-element');
   if (initialValue) {
     counter.setAttribute('initial-value', initialValue);
