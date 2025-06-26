@@ -1,5 +1,6 @@
 export default function decorate(block) {
 const [titleElement] = block.children;
+  console.log(block);
 alert('testing');
   const dummy = document.createElement('dummy');
   dummy.classList.add('title');
