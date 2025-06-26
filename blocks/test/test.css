@@ -1,12 +1,6 @@
-.test title {
+.test .title {
      font-size: 50px;
 }
-.test description {
+.test .description {
      font-size: 15px;
-}
-
-@media (width >= 900px) {
-  .test {
-    padding: 40px 32px;
-  }
 }
