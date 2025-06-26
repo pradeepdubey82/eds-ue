@@ -1,5 +1,5 @@
 export default function decorate(block) { 
   const [elements] = block.children;
-  elements[0].classList.add('title');
-  elements[1].classList.add('description');
+  elements.title.classList.add('title');
+  elements.description.classList.add('description');
 }
