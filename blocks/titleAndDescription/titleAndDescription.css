@@ -1,13 +1,10 @@
-.block.titleAndDescription {
-   p {
-   .title {
+.titleAndDescription p .title{
      font-size: 50px;
-   }
-   .description {
-     font-size: 15px;
-   }
-} 
 }
+.titleAndDescription p .description {
+     font-size: 15px;
+}
+
 @media (width >= 900px) {
   .hero {
     padding: 40px 32px;
