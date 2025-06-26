@@ -1,7 +1,7 @@
-.titleAndDescription p .title{
+.block.titleAndDescription title{
      font-size: 50px;
 }
-.titleAndDescription p .description {
+.block.titleAndDescription description {
      font-size: 15px;
 }
 
