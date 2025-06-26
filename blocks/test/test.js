@@ -1,8 +1,5 @@
 export default function decorate(block) { 
-  block.querySelectorAll('p').forEach((p) => {
-    const innerHTML = p.innerHTML?.trim();
-    if (innerHTML?.startsWith("Title")) {
-      p.classList.add('title');
-    }
-  });
+  const [elements] = block.children;
+  elements[0].classList.add('title');
+  elements[1].classList.add('description');
 }
