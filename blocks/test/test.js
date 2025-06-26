@@ -4,7 +4,12 @@ export default function decorate(block) {
   const t2 = cells[1].classList.add('description');
 
   block.textContent = '';
-  block.appendChild(t1);
-  block.appendChild(t2);
+  const initialValue = "Pradeep Test";
+  const counter = document.createElement('counter-element');
+  if (initialValue) {
+    counter.setAttribute('initial-value', initialValue);
+  }
+  block.textContent = '';
+  block.appendChild(counter);
 
 }
