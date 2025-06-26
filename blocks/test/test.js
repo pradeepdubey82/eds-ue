@@ -1,6 +1,11 @@
 export default function decorate(block) { 
-  const title = block.title.classList.add('title');
-  const desc = block.description.classList.add('description');
-  block.appendChild(desc);
-  block.children.appendChild(title);
+  block.querySelectorAll('p').forEach((p) => {
+    const innerHTML = p.innerHTML?.trim();
+
+    // If the paragraph starts with Terms and conditions: then style it as such
+    if (innerHTML?.startsWith("Title:")) {
+      /* If a paragraph starts with '*', add a special CSS class. */
+      p.classList.add('title');
+    }
+  });
 }
