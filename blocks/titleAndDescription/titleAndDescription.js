@@ -1,8 +1,11 @@
 export default function decorate(block) {
     alert("js invoked!!");
-    block.chi
-    const title = document.createElement("span");
-    title.classList.add("title");
-    const description = document.createElement("span");
-    description.classList.add("description");
+    const cells = Array.from(block.children);
+    const titleText = cells[0]?.textContent.trim();
+    titleText.classList.add("title");
+    block.appendChild(titleText);
+
+    const descriptioText = cells[1]?.textContent.trim();
+    descriptioText.classList.add("description");
+    block.appendChild(descriptioText);
 }
