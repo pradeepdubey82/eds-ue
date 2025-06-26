@@ -216,7 +216,7 @@
     ]
   },
   {
-    "id": "titleAndDescription",
+    "id": "test",
     "fields": [
       {
         "component": "text",
