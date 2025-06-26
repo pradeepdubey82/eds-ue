@@ -1,8 +1,8 @@
 export default function decorate(block) {
-const [quoteWrapper] = block.children;
+const [titleElement] = block.children;
 
   const dummy = document.createElement('dummy');
   dummy.classList.add('title');
-  dummy.textContent = quoteWrapper.textContent.trim();
-  quoteWrapper.replaceChildren(dummy);
+  dummy.textContent = titleElement.textContent.trim();
+  titleElement.replaceChildren(dummy);
 }
