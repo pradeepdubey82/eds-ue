@@ -1,1 +1,3 @@
-alert("js invoked");
+export default function decorate(block) {
+    alert("js invoked!!");
+}
