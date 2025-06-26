@@ -1,7 +1,7 @@
-.titleAndDescription title {
+.titleAndDescription .title {
   font-size: 20px;
 }
-.titleAndDescription description {
+.titleAndDescription .description {
   font-size: 15px;
 }
 @media (width >= 900px) {

@@ -7,5 +7,6 @@ export default function decorate(block) {
 
     const descriptioText = cells[1]?.textContent.trim();
     descriptioText.classList.add("description");
+    block.textContent = '';
     block.appendChild(descriptioText);
 }
