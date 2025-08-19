@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/sap-test-site/:/",
-    "/content/sap-test-site/configuration:/.helix/config.json",
-    "/content/sap-test-site/metadata:/metadata.json"
+    "/content/test-ue-site/:/",
+    "/content/test-ue-site/configuration:/.helix/config.json",
+    "/content/test-ue-site/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/sap-test-site/"
+    "/content/test-ue-site/"
   ]
 }
