@@ -110,12 +110,14 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
 export default async function decorate(block) {
   // load nav as fragment
   const navMeta = getMetadata('nav');
-  const navPath = "";
+  const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/design-nav';
+/*
   if(window.location.href.indexOf('design-system') > -1) {
-     navPath = navMeta ? new URL(navMeta, window.location).pathname : '/design-nav';
+      navPath = navMeta ? new URL(navMeta, window.location).pathname : '/design-nav';
   } else {
       navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   }
+  */
   alert(navPath);
   const fragment = await loadFragment(navPath);
 
