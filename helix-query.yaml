@@ -15,6 +15,6 @@ indices:
         select: head > meta[name="robots"]
         value: attribute(el, "content")
       title:  
-        select: head > meta[name="og:title"]
+        select: head > meta[name="jcr:title"]
         value: |
           attribute(el, 'content')
