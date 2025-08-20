@@ -116,9 +116,7 @@ export default async function decorate(block) {
       navPath = navMeta ? new URL(navMeta, window.location).pathname : '/design-nav';
   } else {
       navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
-  }
-  
-  alert(navPath);
+  }  
   const fragment = await loadFragment(navPath);
 
   // decorate nav DOM
